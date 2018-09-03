@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  function-chaining:
+    lang: python3
+    handler: ./function-chaining
+    image: emailfromanywhere/function-chaining:latest

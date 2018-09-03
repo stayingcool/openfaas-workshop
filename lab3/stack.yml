@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  astronaut-finder:
+    lang: python3
+    handler: ./astronaut-finder
+    image: emailfromanywhere/astronaut-finder:latest
+    environment:
+      write_debug: true

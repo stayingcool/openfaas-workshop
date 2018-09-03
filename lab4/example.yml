@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  first:
+    lang: python3
+    handler: ./first
+    image: first:latest
+  second:
+    lang: python3
+    handler: ./second
+    image: second:latest
